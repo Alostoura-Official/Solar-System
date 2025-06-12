@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المجموعة الشمسية</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
+      max-width: 1000px;
+    }
+
+    h1, h2 {
+      color: #4fc3f7;
+      text-align: center;
+    }
+
+    .simulation {
+      position: relative;
+      width: 90vw;
+      max-width: 500px; /* أكبر لتسمح بمدار بلوتو */
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      overflow: visible;
+    }
+
+    .stars-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 115%; /* لتتجاوز مدار بلوتو */
+      height: 115%;
+      transform: translate(-50%, -50%);
+      background-image: url('The stars.gif');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .sun {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle at 30% 30%, #fff, #ffeb3b, #ff9800);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 50px #ff9800;
+      z-index: 1;
+    }
+
+    .planet-orbit {
+      position: absolute;
+      border: 1px dashed rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .planet {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .planet img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    /* حجم المدارات */
+    .mercury-orbit { width: 25%; height: 25%; }
+    .venus-orbit   { width: 35%; height: 35%; }
+    .earth-orbit   { width: 45%; height: 45%; }
+    .mars-orbit    { width: 55%; height: 55%; }
+    .jupiter-orbit { width: 65%; height: 65%; }
+    .saturn-orbit  { width: 75%; height: 75%; }
+    .uranus-orbit  { width: 85%; height: 85%; }
+    .neptune-orbit { width: 95%; height: 95%; }
+    .pluto-orbit   { width: 105%; height: 105%; }
+
+    /* أحجام الكواكب */
+    .mercury { width: 10px; height: 10px; }
+    .venus   { width: 14px; height: 14px; }
+    .earth   { width: 16px; height: 16px; }
+    .mars    { width: 12px; height: 12px; }
+    .jupiter { width: 24px; height: 24px; }
+    .saturn  { width: 20px; height: 20px; }
+    .uranus  { width: 18px; height: 18px; }
+    .neptune { width: 18px; height: 18px; }
+    .pluto   { width: 8px; height: 8px; }
+
+    .earth-system {
+      position: absolute;
+      top: 15;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+    }
+
+    .moon-orbit {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px dashed rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .moon {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .moon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button {
+      background-color: #4fc3f7;
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #03a9f4;
+    }
+
+    .info-panel {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+	
+	.universe-edge {
+     position: absolute;
+     width: 130%;
+     height: 130%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border: 4px solid rgba(255, 255, 255, 0.05);
+     border-radius: 50%;
+     box-shadow: 0 0 80px #45b5e7 inset;
+     z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="simulation">
+      <div class="stars-bg"></div>
+      <div class="sun"></div>
+
+      <!-- الكواكب -->
+      <div class="planet-orbit mercury-orbit"><div class="planet mercury"><img src="Mercury_in_true_color.jpg" alt="عطارد"></div></div>
+      <div class="planet-orbit venus-orbit"><div class="planet venus"><img src="Venus-real_color.jpg" alt="الزهرة"></div></div>
+      
+      <!-- نظام الأرض والقمر -->
+      <div class="planet-orbit earth-orbit">
+        <div class="earth-system">
+          <div class="planet earth"><img src="The_Earth_seen_from_Apollo_17.jpg" alt="الأرض"></div>
+          <div class="moon-orbit"><div class="moon"><img src="FullMoon2010.jpg" alt="القمر"></div></div>
+        </div>
+      </div>
+      
+      <div class="planet-orbit mars-orbit"><div class="planet mars"><img src="OSIRIS.jpg" alt="المريخ"></div></div>
+      <div class="planet-orbit jupiter-orbit"><div class="planet jupiter"><img src="Jupiter.jpg" alt="المشتري"></div></div>
+      <div class="planet-orbit saturn-orbit"><div class="planet saturn"><img src="Saturn_during_Equinox.jpg" alt="زحل"></div></div>
+      <div class="planet-orbit uranus-orbit"><div class="planet uranus"><img src="Uranus2.jpg" alt="أورانوس"></div></div>
+      <div class="planet-orbit neptune-orbit"><div class="planet neptune"><img src="Neptune_Full.jpg" alt="نبتون"></div></div>
+      <div class="planet-orbit pluto-orbit"><div class="planet pluto"><img src="Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" alt="بلوتو"></div></div>
+	  <!-- حافة نهاية الكون -->
+<div class="universe-edge"></div>
+
+      </div>
+      </div>
+
+  <script>
+    let speed = 1;
+    let animationId;
+    let isAnimating = false;
+
+    const planets = [
+      { name: 'mercury', speed: 0.04 },
+      { name: 'venus',   speed: 0.03 },
+      { name: 'earth',   speed: 0.02 },
+      { name: 'mars',    speed: 0.015 },
+      { name: 'jupiter', speed: 0.008 },
+      { name: 'saturn',  speed: 0.006 },
+      { name: 'uranus',  speed: 0.004 },
+      { name: 'neptune', speed: 0.003 },
+      { name: 'pluto',   speed: 0.002 },
+    ];
+
+    let moonAngle = 0;
+    const moonSpeed = 0.15;
+    const angles = {};
+    const orbits = {};
+
+    planets.forEach(p => {
+      angles[p.name] = 0;
+      orbits[p.name] = document.querySelector(`.${p.name}-orbit`);
+    });
+
+    function animate() {
+      planets.forEach(p => {
+        angles[p.name] += p.speed * speed;
+        orbits[p.name].style.transform = `translate(-50%, -50%) rotate(${angles[p.name]}rad)`;
+      });
+
+      moonAngle += moonSpeed * speed;
+      const moonOrbit = document.querySelector('.moon-orbit');
+      if (moonOrbit) {
+        moonOrbit.style.transform = `translate(-50%, -50%) rotate(${moonAngle}rad)`;
+      }
+
+      animationId = requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('load', () => {
+      isAnimating = true;
+      animate();
+    });
+  </script>
+</body>
+</html>
