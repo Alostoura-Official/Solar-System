@@ -6,17 +6,44 @@
 ## 🪐 صور الكواكب
 
 <p align="center">
-  <img src="Mercury_in_true_color.jpg" width="50" height="50" alt="عطارد" title="عطارد"/>
-  <img src="Venus-real_color.jpg" width="50" height="50" alt="الزهرة" title="الزهرة"/>
-  <img src="The_Earth_seen_from_Apollo_17.jpg" width="50" height="50" alt="الأرض" title="الأرض"/>
-  <img src="FullMoon2010.jpg" width="50" height="50" alt="القمر" title="القمر"/>
-  <img src="OSIRIS.jpg" width="50" height="50" alt="المريخ" title="المريخ"/>
-  <img src="Jupiter.jpg" width="50" height="50" alt="المشتري" title="المشتري"/>
-  <img src="Saturn_during_Equinox.jpg" width="50" height="50" alt="زحل" title="زحل"/>
-  <img src="Uranus2.jpg" width="50" height="50" alt="أورانوس" title="أورانوس"/>
-  <img src="Neptune_Full.jpg" width="50" height="50" alt="نبتون" title="نبتون"/>
-  <img src="Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" width="50" height="50" alt="بلوتو" title="بلوتو"/>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="Mercury_in_true_color.jpg" width="50" height="50" alt="عطارد"><br>
+    عطارد
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="Venus-real_color.jpg" width="50" height="50" alt="الزهرة"><br>
+    الزهرة
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="The_Earth_seen_from_Apollo_17.jpg" width="50" height="50" alt="الأرض"><br>
+    الأرض
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="FullMoon2010.jpg" width="50" height="50" alt="القمر"><br>
+    المريخ
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="Jupiter.jpg" width="50" height="50" alt="المشتري"><br>
+    المشتري
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="Saturn_during_Equinox.jpg" width="50" height="50" alt="زحل"><br>
+    زحل
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="Uranus2.jpg" width="50" height="50" alt="أورانوس"><br>
+    أورانوس
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="Neptune_Full.jpg" width="50" height="50" alt="نبتون"><br>
+    نبتون
+  </div>
+  <div style="display: inline-block; text-align: center; margin: 5px;">
+    <img src="Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" width="50" height="50" alt="بلوتو"><br>
+    بلوتو
+  </div>
 </p>
+
 
 
 # النظام الشمسي: نظرة شاملة
