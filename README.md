@@ -5,44 +5,38 @@
 🔗 [اضغط هنا لعرض المشروع](https://alostoura-official.github.io/Solar-System/)
 ## 🪐 صور الكواكب
 
-<p align="center">
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="Mercury_in_true_color.jpg" width="50" height="50" alt="عطارد"><br>
-    عطارد
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="Venus-real_color.jpg" width="50" height="50" alt="الزهرة"><br>
-    الزهرة
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="The_Earth_seen_from_Apollo_17.jpg" width="50" height="50" alt="الأرض"><br>
-    الأرض
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="FullMoon2010.jpg" width="50" height="50" alt="القمر"><br>
-    المريخ
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="Jupiter.jpg" width="50" height="50" alt="المشتري"><br>
-    المشتري
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="Saturn_during_Equinox.jpg" width="50" height="50" alt="زحل"><br>
-    زحل
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="Uranus2.jpg" width="50" height="50" alt="أورانوس"><br>
-    أورانوس
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="Neptune_Full.jpg" width="50" height="50" alt="نبتون"><br>
-    نبتون
-  </div>
-  <div style="display: inline-block; text-align: center; margin: 5px;">
-    <img src="Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" width="50" height="50" alt="بلوتو"><br>
-    بلوتو
-  </div>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="Mercury_in_true_color.jpg" width="50" height="50"><br>عطارد
+    </td>
+    <td align="center">
+      <img src="Venus-real_color.jpg" width="50" height="50"><br>الزهرة
+    </td>
+    <td align="center">
+      <img src="The_Earth_seen_from_Apollo_17.jpg" width="50" height="50"><br>الأرض
+    </td>
+    <td align="center">
+      <img src="OSIRIS.jpg" width="50" height="50"><br>المريخ
+    </td>
+    <td align="center">
+      <img src="Jupiter.jpg" width="50" height="50"><br>المشتري
+    </td>
+    <td align="center">
+      <img src="Saturn_during_Equinox.jpg" width="50" height="50"><br>زحل
+    </td>
+    <td align="center">
+      <img src="Uranus2.jpg" width="50" height="50"><br>أورانوس
+    </td>
+    <td align="center">
+      <img src="Neptune_Full.jpg" width="50" height="50"><br>نبتون
+    </td>
+    <td align="center">
+      <img src="Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" width="50" height="50"><br>بلوتو
+    </td>
+  </tr>
+</table>
+
 
 
 
